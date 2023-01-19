@@ -1,3 +1,8 @@
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { CategoriesModule } from './modules/categories/categories.module';
+import { CatergoriesRoutingModule } from './modules/categories/categories-routing.module';
+import { SidenavComponent } from './modules/layout/sidenav/sidenav.component';
+import { LayoutModule } from './modules/layout/layout.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,11 +12,17 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LayoutModule,
+    CategoriesModule,
+    DashboardModule
+
 
   ],
   providers: [],
