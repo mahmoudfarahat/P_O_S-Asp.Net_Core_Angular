@@ -20,3 +20,6 @@ https://www.npmjs.com/package/toastr
 
 6-Ngx spinner:
 https://www.npmjs.com/package/ngx-spinner
+
+7-fontawesome
+https://fontawesome.com/

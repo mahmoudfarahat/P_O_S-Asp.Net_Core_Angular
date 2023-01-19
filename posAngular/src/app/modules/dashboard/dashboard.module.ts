@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StaticsComponent } from './statics/statics.component';
-import { DashboardRoutingModule } from './Dashboard-routing.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
 

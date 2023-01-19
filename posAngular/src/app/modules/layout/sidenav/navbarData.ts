@@ -1,8 +1,8 @@
 export const navbarData =[
   {
-    routelink:'',
-    icon:'fal , fa-home',
-    label :''
+    routerLink:'dashboard',
+    icon:'fa fa-home',
+    label :'Dashboard'
   }
 
 ]
