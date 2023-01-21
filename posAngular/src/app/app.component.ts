@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'posAngular';
+
+
+  isSideNavCollapsed = false;
+  screenWidth =0
+  
+  onToggleSideNav(data: SideNavToggle):void{
+
+  this.screenWidth = data.screenWidth;
+  this.isSideNavCollapsed = data.collapsed
+
+
+  }
+
+
 }
+
+  interface SideNavToggle{
+    screenWidth: number;
+    collapsed : boolean
+  }
