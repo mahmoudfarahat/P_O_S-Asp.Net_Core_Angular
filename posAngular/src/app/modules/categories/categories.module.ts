@@ -5,12 +5,15 @@ import { CatergoriesRoutingModule } from './categories-routing.module';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { CatergoriesEditComponent } from './catergories-edit/catergories-edit.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
 @NgModule({
   declarations: [
     CatergoriesListComponent,
+    CatergoriesEditComponent,
 
   ],
   imports: [
@@ -18,7 +21,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     CatergoriesRoutingModule,
     MatTableModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatIconModule
 
   ]
 

@@ -4,7 +4,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 
 export interface PeriodicElement {
-id:number
+  id:number
   name: string;
   isActive: number;
   note: string;
@@ -30,7 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class CatergoriesListComponent implements OnInit  , AfterViewInit{
 
-  displayedColumns: string[] = ['id', 'name',  'isActive','note'];
+  displayedColumns: string[] = ['id', 'name',  'isActive','note' , 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   constructor() { }
