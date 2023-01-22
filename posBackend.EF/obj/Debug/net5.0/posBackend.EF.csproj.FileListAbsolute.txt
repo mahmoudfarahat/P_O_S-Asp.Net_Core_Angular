@@ -1,0 +1,15 @@
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\posBackend.EF.deps.json
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\posBackend.EF.runtimeconfig.json
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\posBackend.EF.runtimeconfig.dev.json
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\posBackend.EF.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\ref\posBackend.EF.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\bin\Debug\net5.0\posBackend.EF.pdb
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.csproj.AssemblyReference.cache
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.AssemblyInfoInputs.cache
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.AssemblyInfo.cs
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.csproj.CoreCompileInputs.cache
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\ref\posBackend.EF.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.pdb
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.genruntimeconfig.cache
