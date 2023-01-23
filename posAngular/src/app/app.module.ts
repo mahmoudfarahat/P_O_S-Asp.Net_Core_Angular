@@ -1,3 +1,4 @@
+import { ProductsModule } from './modules/products/products.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { CategoriesModule } from './modules/categories/categories.module';
 import { CatergoriesRoutingModule } from './modules/categories/categories-routing.module';
@@ -15,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
- 
+
 
 
   ],
@@ -25,8 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LayoutModule,
     CategoriesModule,
     DashboardModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    ProductsModule
 
   ],
   providers: [],
