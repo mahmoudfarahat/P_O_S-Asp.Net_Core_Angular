@@ -9,14 +9,11 @@ const routes: Routes = [
   .then(mod => mod.DashboardModule)},
 
 
-   {path:'categories',
-   loadChildren: () => import('./modules/categories/categories.module')
-   .then(mod => mod.CategoriesModule)},
+   {path:'inventory',
+   loadChildren: () => import('./modules/inventory/inventory.module')
+   .then(mod => mod.InventoryModule)},
 
-
-   {path:'products',
-   loadChildren: () => import('./modules/products/products.module')
-   .then(mod => mod.ProductsModule)},
+ 
 
 
 ];

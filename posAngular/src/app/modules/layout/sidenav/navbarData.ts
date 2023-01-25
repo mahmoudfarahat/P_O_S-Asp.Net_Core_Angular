@@ -1,19 +1,37 @@
-export const navbarData =[
+import { INavbarData } from './helper';
+
+export const navbarData : INavbarData[] =[
   {
     routerLink:'dashboard',
     icon:'fa fa-home',
     label :'Dashboard'
   },
+
   {
-    routerLink:'categories',
-    icon:'fa fa-tags',
-    label :'Categories'
-  },
-  {
-    routerLink:'products',
+    routerLink:'inventory',
     icon:'fa fa-list',
-    label :'Products'
-  }
+    label :'Inventory',
+    items : [
+      {
+        routerLink:'inventory/products',
+        label:'Products'
+      },
+      {
+        routerLink:'inventory/units',
+        label:'Units'
+      },
+      {
+        routerLink:'inventory/categories',
+        label:'Categories'
+      }
+
+
+    ]
+  } ,{
+    routerLink:'sales',
+    icon:'fa fa-tags',
+    label :'Sales'
+  },
 
 
 ]

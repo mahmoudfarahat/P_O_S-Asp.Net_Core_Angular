@@ -1,3 +1,4 @@
+
 import { Component, OnInit , ViewChild  ,AfterViewInit} from '@angular/core';
 import {MatTable} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
@@ -22,14 +23,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {id: 9, name: 'Fluorine', isActive: 18.9984, note: 'F'},
   {id: 10, name: 'Neon', isActive: 20.1797, note: 'Ne'},
 ];
-
 @Component({
-  selector: 'app-catergories-list',
-  templateUrl: './catergories-list.component.html',
-  styleUrls: ['./catergories-list.component.css']
+  selector: 'app-categories-list',
+  templateUrl: './categories-list.component.html',
+  styleUrls: ['./categories-list.component.css']
 })
-export class CatergoriesListComponent implements OnInit  , AfterViewInit{
-
+export class CategoriesListComponent implements OnInit ,AfterViewInit{
   displayedColumns: string[] = ['id', 'name',  'isActive','note' , 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
@@ -51,8 +50,4 @@ export class CatergoriesListComponent implements OnInit  , AfterViewInit{
 
 
   @ViewChild(MatTable) table: any ;
-  // @ViewChild(MatTable) table: MatTable<PeriodicElement> ;
-
-
-
 }
