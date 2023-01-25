@@ -1,5 +1,5 @@
 import { trigger, style, state, transition, animate } from '@angular/animations';
-import { INavbarData } from './../sidenav/helper';
+import { INavbarData } from '../../layout/sidenav/helper';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({

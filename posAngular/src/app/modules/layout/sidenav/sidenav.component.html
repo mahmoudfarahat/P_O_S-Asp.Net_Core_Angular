@@ -59,6 +59,7 @@
         }}</span>
       </a>
       <div *ngIf="collapsed && data.items && data.items.length > 0">
+
         <app-sidenav-sub
           [data]="data"
           [collapsed]="collapsed"
@@ -66,6 +67,7 @@
           [collapsed]="collapsed"
           [expanded]="data.expanded"
         ></app-sidenav-sub>
+
       </div>
     </li>
   </ul>

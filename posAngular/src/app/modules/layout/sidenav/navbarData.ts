@@ -32,6 +32,34 @@ export const navbarData : INavbarData[] =[
     icon:'fa fa-tags',
     label :'Sales'
   },
-
-
+   {
+    routerLink:'purchases',
+    icon:'fa fa-tags',
+    label :'Purchases'
+  },
+  {
+    routerLink:'suppliers',
+    icon:'fa fa-tags',
+    label :'Suppliers'
+  },
+  {
+    routerLink:'customers',
+    icon:'fa fa-users',
+    label :'Customers'
+  },
+  {
+    routerLink:'accounting',
+    icon:'fa fa-tags',
+    label :'Accounting'
+  },
+  {
+    routerLink:'reports',
+    icon:' fa  fa-file-text',
+    label :'Reports'
+  },
+  {
+    routerLink:'users',
+    icon:'fa fa-user-circle',
+    label :'Users'
+  },
 ]

@@ -1,3 +1,4 @@
+import { DynamicModule } from './modules/dynamic/dynamic.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 
 import { DashboardModule } from './modules/dashboard/dashboard.module';
@@ -23,9 +24,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-InventoryModule,
+    InventoryModule,
     DashboardModule,
-
+    DynamicModule
 
 
   ],
