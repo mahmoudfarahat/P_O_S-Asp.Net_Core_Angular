@@ -1,3 +1,5 @@
+import { DynamicModule } from './../dynamic/dynamic.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -9,16 +11,20 @@ import { BodyComponent } from './body/body.component';
 
 
 
+765
 
 @NgModule({
   declarations: [
     SidenavComponent,
     BodyComponent,
 
+
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    DynamicModule
   ],
 exports:[
 
