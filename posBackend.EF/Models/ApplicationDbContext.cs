@@ -55,6 +55,7 @@ namespace posBackend.EF.Models
                      pu =>
                      {
                          pu.Property(p => p.IsMainUnit).HasDefaultValue(false);
+                         pu.Property(p => p.index).UseIdentityColumn(1, 1);
                          pu.HasKey(p => new { p.ProductID, p.UnitID });
                      }
                 );

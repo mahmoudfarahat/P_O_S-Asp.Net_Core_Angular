@@ -60,3 +60,5 @@ D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\posBackend.EF.dll
 D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\posBackend.EF.pdb
 D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\Humanizer.dll
 D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\AutoMapper.dll
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

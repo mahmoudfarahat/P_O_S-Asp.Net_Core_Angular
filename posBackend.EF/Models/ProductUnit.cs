@@ -12,7 +12,9 @@ namespace posBackend.EF.Models
         public int UnitID { get; set; }
         public bool IsMainUnit { get; set; }
         public decimal ConvertFactor { get; set; }
+        public int index { get; set; }
         public Product Product { get; set; }
         public Unit Unit { get; set; }
+        
     }
 }
