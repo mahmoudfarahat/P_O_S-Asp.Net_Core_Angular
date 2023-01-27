@@ -1,19 +1,65 @@
-export const navbarData =[
+import { INavbarData } from './helper';
+
+export const navbarData : INavbarData[] =[
   {
     routerLink:'dashboard',
     icon:'fa fa-home',
     label :'Dashboard'
   },
+
   {
-    routerLink:'categories',
+    routerLink:'inventory',
+    icon:'fa fa-list',
+    label :'Inventory',
+    items : [
+      {
+        routerLink:'inventory/products',
+        label:'Products'
+      },
+      {
+        routerLink:'inventory/units',
+        label:'Units'
+      },
+      {
+        routerLink:'inventory/categories',
+        label:'Categories'
+      }
+
+
+    ]
+  } ,{
+    routerLink:'sales',
     icon:'fa fa-tags',
-    label :'Categories'
+    label :'Sales'
+  },
+   {
+    routerLink:'purchases',
+    icon:'fa fa-tags',
+    label :'Purchases'
   },
   {
-    routerLink:'products',
-    icon:'fa fa-list',
-    label :'Products'
-  }
-
-
+    routerLink:'suppliers',
+    icon:'fa fa-tags',
+    label :'Suppliers'
+  },
+  {
+    routerLink:'customers',
+    icon:'fa fa-users',
+    label :'Customers'
+  },
+  {
+    routerLink:'accounting',
+    icon:'fa fa-tags',
+    label :'Accounting'
+  },
+  {
+    routerLink:'reports',
+    icon:' fa  fa-file-text',
+    label :'Reports'
+  },
+  {
+    routerLink:'users',
+    icon:'fa fa-user-circle',
+    label :'Users'
+  },
 ]
