@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "posBackend/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "5.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.6",
           "Swashbuckle.AspNetCore": "5.6.3",
           "posBackend.EF": "1.0.0",

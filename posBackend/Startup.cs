@@ -57,7 +57,7 @@ namespace posBackend
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(a => a.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();
 
             app.UseAuthorization();
