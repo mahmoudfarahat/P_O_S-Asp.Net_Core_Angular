@@ -39,6 +39,7 @@ namespace posBackend
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "posBackend", Version = "v1" });
