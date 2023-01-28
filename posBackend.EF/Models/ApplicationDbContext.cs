@@ -36,7 +36,16 @@ namespace posBackend.EF.Models
                 p.Property(x => x.SectoralSellingPrice).HasDefaultValue(0);
                 p.Property(p => p.IsActive).HasDefaultValue(true);
             });
+            modelBuilder.Entity<Customer>(c =>
+            {
+                c.Property(x => x.IsActive).HasDefaultValue(true);
+                c.Property(x => x.CustomerName).IsRequired(true).HasMaxLength(100);
+                c.Property(x => x.Phone1).HasMaxLength(50);
+                c.Property(x => x.Phone2).HasMaxLength(50);
+                c.Property(x => x.RegisterNumber).HasMaxLength(50);
+                c.Property(x => x.CustomerEmail).HasMaxLength(50);
 
+            });
 
             modelBuilder.Entity<Product>()
                 .HasMany(p => p.Units)
@@ -66,5 +75,7 @@ namespace posBackend.EF.Models
         public DbSet<Unit> Units { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductUnit> ProductUnits { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
     }
 }

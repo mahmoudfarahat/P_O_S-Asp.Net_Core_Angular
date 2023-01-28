@@ -14,6 +14,7 @@ namespace posBackend.EF.UnitOfWork
         IRepository<Unit> Units { get; }
         IRepository<Product> Products { get; }
         IRepository<ProductUnit> ProductUnits { get; }
+        IRepository<Customer> Customers { get; }
 
         int Complete();
 

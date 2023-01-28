@@ -17,6 +17,8 @@ namespace posBackend.EF.UnitOfWork
 
         public IRepository<ProductUnit> ProductUnits { get; private set; }
 
+        public IRepository<Customer> Customers { get; private set; }
+
         public UnitOfWork(ApplicationDbContext Context)
         {
             _Context = Context;
@@ -25,7 +27,8 @@ namespace posBackend.EF.UnitOfWork
             Units = new Repository<Unit>(_Context);
             Products = new Repository<Product>(_Context);
             ProductUnits = new Repository<ProductUnit>(_Context);
-        }        
+            Customers = new Repository<Customer>(_Context);
+        }
 
         public int Complete()
         {

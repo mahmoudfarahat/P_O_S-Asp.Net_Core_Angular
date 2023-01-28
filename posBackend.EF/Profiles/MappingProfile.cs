@@ -20,6 +20,7 @@ namespace posBackend.EF.Profiles
             CreateMap<Unit, UnitDTO>().ReverseMap();
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<ProductUnit, ProductUnitsDTO>().ReverseMap();
+            CreateMap<Customer, CustomerDTO>().ReverseMap();
 
         }
     }
