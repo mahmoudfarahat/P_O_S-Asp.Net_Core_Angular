@@ -127,3 +127,4 @@ E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend\obj\Debug\net5.0\posBackend
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend\obj\Debug\net5.0\ref\posBackend.dll
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend\obj\Debug\net5.0\posBackend.pdb
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend\obj\Debug\net5.0\posBackend.genruntimeconfig.cache
+D:\repo\P_O_S-Asp.Net_Core_Angular\posBackend\bin\Debug\net5.0\posBackend.StaticWebAssets.xml
