@@ -9,7 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { InventoryRoutingModule } from './inventory-routing.module';
-
+import { ProductsListComponent } from './products/products-list/products-list.component';
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { UnitsListComponent } from './units/units-list/units-list.component';
 
 
 @NgModule({
@@ -18,6 +21,8 @@ import { InventoryRoutingModule } from './inventory-routing.module';
     UnitsComponent,
     CategoriesComponent,
     CategoriesListComponent,
+    ProductsListComponent,
+    UnitsListComponent,
 
   ],
   imports: [
@@ -26,7 +31,9 @@ import { InventoryRoutingModule } from './inventory-routing.module';
     InventoryRoutingModule,
     MatButtonModule,
     MatPaginatorModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class InventoryModule { }
