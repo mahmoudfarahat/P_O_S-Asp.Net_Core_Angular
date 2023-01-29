@@ -13,6 +13,7 @@ import { ProductsListComponent } from './products/products-list/products-list.co
 import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UnitsListComponent } from './units/units-list/units-list.component';
+import {MatSortModule} from '@angular/material/sort';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { UnitsListComponent } from './units/units-list/units-list.component';
     MatPaginatorModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSortModule,
+
   ]
 })
 export class InventoryModule { }

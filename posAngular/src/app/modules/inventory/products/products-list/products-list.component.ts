@@ -12,7 +12,7 @@ import {MatTableDataSource} from '@angular/material/table';
   templateUrl: './products-list.component.html',
   styleUrls: ['./products-list.component.css']
 })
-export class ProductsListComponent implements OnInit {
+export class ProductsListComponent implements OnInit ,AfterViewInit {
 
   constructor(private ProductsService:ProductsService) {
     // Create 100 users
@@ -27,7 +27,7 @@ export class ProductsListComponent implements OnInit {
   }
 
 
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit' ,];
   // dataSource: MatTableDataSource<UserData>;
    dataSource: MatTableDataSource<any>;
 
