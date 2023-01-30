@@ -17,7 +17,7 @@
           }
         }
   "
-  class="sublevel"
+  class="sublevel-nav"
 >
   <li *ngFor="let item of data.items" class="sublevel-nav-item">
     <a
@@ -49,6 +49,7 @@
 
     <div *ngIf="item.items && item.items.length > 0">
       <app-sidenav-sub
+      [data]="item"
         [collapsed]="collapsed"
         [multiple]="multiple"
         [expanded]="item.expanded"
