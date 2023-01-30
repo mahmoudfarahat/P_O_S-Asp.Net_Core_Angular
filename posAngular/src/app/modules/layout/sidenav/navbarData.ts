@@ -14,7 +14,18 @@ export const navbarData : INavbarData[] =[
     items : [
       {
         routerLink:'inventory/products',
-        label:'Products'
+        label:'Products',
+        // items:[
+        //       {
+        //         routerLink:'',
+        //         label:'Level 2.1'
+        //       },
+        //       {
+        //         routerLink:'',
+        //         label:'Level 2.2'
+        //       }
+
+        // ]
       },
       {
         routerLink:'inventory/units',
