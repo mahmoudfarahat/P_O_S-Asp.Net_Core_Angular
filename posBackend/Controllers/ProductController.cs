@@ -48,18 +48,18 @@ namespace posBackend.Controllers
         [HttpGet("index")]
         public async Task<IActionResult> Seacrh(string search, [FromQuery] SearchSettings searchSettings)
         {
-            var query = await _unitOfWork.Products.Search(p => p.IsActive);
-            if (!string.IsNullOrEmpty(search))
+            if (string.IsNullOrEmpty(search))
             {
-                query = await _unitOfWork.Products.Search(p =>
-                 p.ProductName.Contains(search) ||
-                 p.Category.CategoryName.Contains(search) ||
-                 p.Description.Contains(search), searchSettings.Skip, searchSettings.Take
-                 );
-
+                search = "";
             }
+            var query = await _unitOfWork.Products.Search(p => (
+                               p.ProductName.Contains(search) ||
+                               p.Category.CategoryName.Contains(search) ||
+                               p.Description.Contains(search)), searchSettings.Skip, searchSettings.Take, null, "ASC"
 
-            return Ok(query);
+                               );
+
+            return Ok(new { data = query, TotalCount = query.Count() });
         }
 
         [HttpPost]
