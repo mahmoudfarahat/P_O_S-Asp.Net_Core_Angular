@@ -53,7 +53,7 @@ namespace posBackend.Controllers
 
                                );
 
-            return Ok( new { data = query  , TotalCount =  ( await _unitOfWork.Units.GetAll()).Count()});
+            return Ok( new { data = query  , TotalCount = query.Count()});
 
         }
 
