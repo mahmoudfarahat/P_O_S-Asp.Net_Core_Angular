@@ -1,24 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahmoud.farahat\\Desktop\\project\\posBackend.EF\\posBackend.EF.csproj": {}
+    "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahmoud.farahat\\Desktop\\project\\posBackend.EF\\posBackend.EF.csproj": {
+    "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahmoud.farahat\\Desktop\\project\\posBackend.EF\\posBackend.EF.csproj",
+        "projectUniqueName": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
         "projectName": "posBackend.EF",
-        "projectPath": "C:\\Users\\mahmoud.farahat\\Desktop\\project\\posBackend.EF\\posBackend.EF.csproj",
-        "packagesPath": "C:\\Users\\mahmoud.farahat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahmoud.farahat\\Desktop\\project\\posBackend.EF\\obj\\",
+        "projectPath": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
+        "packagesPath": "C:\\Users\\Mahmoud\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mahmoud.farahat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Mahmoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -77,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
