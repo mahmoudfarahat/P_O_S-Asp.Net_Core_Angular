@@ -21,7 +21,17 @@ namespace posBackend.EF.Profiles
             CreateMap<Product, ProductDTO>().ReverseMap();
             CreateMap<ProductUnit, ProductUnitsDTO>().ReverseMap();
             CreateMap<Customer, CustomerDTO>().ReverseMap();
+            CreateMap<Store, StoreDto>().ReverseMap();
+            CreateMap<OpenBalance, OpenBalanceDTO>()
+                .ReverseMap()
+                .ForMember(s => s.store, u => u.Ignore());
+            CreateMap<OpenBalanceDt, OpenBalanceDtDto>()
+               .ReverseMap()
+               .ForMember(o => o.OpenBalance, u => u.Ignore())
+               .ForMember(p => p.Product, u => u.Ignore())
+               .ForMember(u => u.Unit, u => u.Ignore());
 
         }
+    
     }
 }

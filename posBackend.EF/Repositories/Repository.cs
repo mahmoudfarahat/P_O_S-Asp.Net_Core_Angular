@@ -54,7 +54,7 @@ namespace posBackend.EF.Repositories
             return await _context.Set<TEntity>().Where(criteria).ToListAsync();
         }
 
-        public async Task<IEnumerable<TEntity>> Search(Expression<Func<TEntity, bool>> criteria, int skip = 0, int take = 10,
+        public async Task<IEnumerable<TEntity>> Search(Expression<Func<TEntity, bool>> criteria, int skip , int take,
             Expression<Func<TEntity, bool>> orderBy = null, string orderByDirection = "ASC")
         {
             IQueryable<TEntity> query = _context.Set<TEntity>().Where(criteria).Skip(skip).Take(take);             
