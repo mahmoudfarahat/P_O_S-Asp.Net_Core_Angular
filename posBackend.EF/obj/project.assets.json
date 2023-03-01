@@ -5911,13 +5911,47 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Master\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\Mahmoud\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\engas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {}
+>>>>>>> 019406f837bcae6e7d836099fd05d03f2f109981
+>>>>>>> fb25858f49fc98120d4d99f953a6e79ad19b6b2f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "E:\\Source Code\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
+      "projectName": "posBackend.EF",
+      "projectPath": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
+      "packagesPath": "C:\\Users\\Mahmoud\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mahmoud\\Desktop\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Mahmoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+      "projectUniqueName": "D:\\repo\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
+>>>>>>> fb25858f49fc98120d4d99f953a6e79ad19b6b2f
       "projectName": "posBackend.EF",
       "projectPath": "E:\\Source Code\\P_O_S-Asp.Net_Core_Angular\\posBackend.EF\\posBackend.EF.csproj",
       "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
@@ -5929,6 +5963,7 @@
       "configFilePaths": [
         "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 019406f837bcae6e7d836099fd05d03f2f109981
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5987,7 +6022,15 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 019406f837bcae6e7d836099fd05d03f2f109981
+>>>>>>> fb25858f49fc98120d4d99f953a6e79ad19b6b2f
       }
     }
   },

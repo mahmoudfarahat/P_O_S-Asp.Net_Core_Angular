@@ -1,8 +1,12 @@
+import { CategoriesEditComponent } from './../categories-edit/categories-edit.component';
 
-import { Component, OnInit , ViewChild  ,AfterViewInit} from '@angular/core';
+
+import { Component, OnInit , ViewChild  ,AfterViewInit, Inject} from '@angular/core';
 import {MatTable} from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
+import { MatDialog } from '@angular/material/dialog';
+
 
 export interface PeriodicElement {
   id:number
@@ -32,7 +36,7 @@ export class CategoriesListComponent implements OnInit ,AfterViewInit{
   displayedColumns: string[] = ['id', 'name',  'isActive','note' , 'actions'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
-  constructor() { }
+  constructor(   public dialog: MatDialog, ) { }
 
   ngOnInit(): void {
   }
@@ -46,8 +50,14 @@ export class CategoriesListComponent implements OnInit ,AfterViewInit{
     this.dataSource.paginator = this.paginator;
   }
 
-
-
-
   @ViewChild(MatTable) table: any ;
+
+  openCategoryDialog(){
+    const dialogRef = this.dialog.open(CategoriesEditComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
+
+
 }

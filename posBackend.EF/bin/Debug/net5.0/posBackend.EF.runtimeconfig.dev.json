@@ -1,9 +1,23 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Master\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Master\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+=======
+<<<<<<< HEAD
+      "C:\\Users\\Mahmoud\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Mahmoud\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+=======
+      "C:\\Users\\engas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\engas\\.nuget\\packages",
+      "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+>>>>>>> 019406f837bcae6e7d836099fd05d03f2f109981
+>>>>>>> fb25858f49fc98120d4d99f953a6e79ad19b6b2f
     ]
   }
 }

@@ -14,8 +14,10 @@ import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UnitsListComponent } from './units/units-list/units-list.component';
 import {MatSortModule} from '@angular/material/sort';
-
-
+import { CategoriesEditComponent } from './categories/categories-edit/categories-edit.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ProductsComponent,
@@ -24,6 +26,7 @@ import {MatSortModule} from '@angular/material/sort';
     CategoriesListComponent,
     ProductsListComponent,
     UnitsListComponent,
+    CategoriesEditComponent,
 
   ],
   imports: [
@@ -36,6 +39,9 @@ import {MatSortModule} from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
+    MatDialogModule,
+    MatCheckboxModule,
+    ReactiveFormsModule
 
   ]
 })
