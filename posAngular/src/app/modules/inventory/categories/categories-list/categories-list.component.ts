@@ -1,3 +1,4 @@
+import { CategoriesService } from './../../../../services/inventory/categories/categories.service';
 import { CategoriesEditComponent } from './../categories-edit/categories-edit.component';
 
 
@@ -33,12 +34,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./categories-list.component.css']
 })
 export class CategoriesListComponent implements OnInit ,AfterViewInit{
-  displayedColumns: string[] = ['id', 'name',  'isActive','note' , 'actions'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
-
-  constructor(   public dialog: MatDialog, ) { }
+  displayedColumns: string[] = ['id', 'categoryName',  'isActive','notes' , 'actions'];
+  // dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  dataSource = []
+  constructor(   public dialog: MatDialog,private CategoriesService:CategoriesService) { }
 
   ngOnInit(): void {
+    this.getCategories()
   }
 
   // @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -47,7 +49,7 @@ export class CategoriesListComponent implements OnInit ,AfterViewInit{
 
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    // this.dataSource.paginator = this.paginator;
   }
 
   @ViewChild(MatTable) table: any ;
@@ -59,5 +61,10 @@ export class CategoriesListComponent implements OnInit ,AfterViewInit{
     });
   }
 
-
+getCategories(){
+ this.CategoriesService.getCategories().subscribe(a =>{
+  this.dataSource = a
+  console.log(a)
+ })
+}
 }
