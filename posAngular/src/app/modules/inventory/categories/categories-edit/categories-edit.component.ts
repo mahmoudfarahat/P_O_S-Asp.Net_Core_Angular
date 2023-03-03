@@ -24,7 +24,7 @@ addCategory(){
 }
 
 Close(){
-  
+  this.dialog.close()
 }
 
 }
