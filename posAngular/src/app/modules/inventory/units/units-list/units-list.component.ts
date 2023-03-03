@@ -28,11 +28,11 @@ export class UnitsListComponent implements OnInit ,AfterViewInit {
   ngOnInit(): void {
 this.getUnits()
   }
-  
+
   GetData(data:any){
     console.log(data);
     this.unitsService.getUnits(this.filteration,(data.pageIndex *data.pageSize)
-      ,10).subscribe(units => {
+      ,data.pageSize).subscribe(units => {
     console.log(units)
     this.dataSource =   units.data;
     this.total = units.totalCount

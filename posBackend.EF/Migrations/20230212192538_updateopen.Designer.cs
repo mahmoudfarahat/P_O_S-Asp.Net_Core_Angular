@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using posBackend.EF.Models;
 
 namespace posBackend.EF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230212192538_updateopen")]
+    partial class updateopen
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,7 +128,7 @@ namespace posBackend.EF.Migrations
 
                     b.HasIndex("storeId");
 
-                    b.ToTable("OpenBalance");
+                    b.ToTable("OpenBalances");
                 });
 
             modelBuilder.Entity("posBackend.EF.Models.OpenBalanceDt", b =>
@@ -150,7 +152,8 @@ namespace posBackend.EF.Migrations
 
                     b.Property<decimal>("TotalDt")
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18,2)")
+                        .HasComputedColumnSql("[Quantity]*[PurchasePrice]");
 
                     b.Property<int>("UnitId")
                         .HasColumnType("int");
@@ -163,7 +166,7 @@ namespace posBackend.EF.Migrations
 
                     b.HasIndex("UnitId");
 
-                    b.ToTable("OpenBalanceDt");
+                    b.ToTable("OpenBalancesDt");
                 });
 
             modelBuilder.Entity("posBackend.EF.Models.Product", b =>

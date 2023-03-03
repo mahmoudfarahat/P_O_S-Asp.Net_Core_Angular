@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using posBackend.EF.Models;
 
 namespace posBackend.EF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230212193503_open2")]
+    partial class open2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,72 +100,6 @@ namespace posBackend.EF.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("posBackend.EF.Models.OpenBalance", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("DocNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Note")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("OpenBalanceDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("storeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("storeId");
-
-                    b.ToTable("OpenBalance");
-                });
-
-            modelBuilder.Entity("posBackend.EF.Models.OpenBalanceDt", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("OpenBalanceId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("PurchasePrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Quantity")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("TotalDt")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("UnitId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("OpenBalanceId");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("UnitId");
-
-                    b.ToTable("OpenBalanceDt");
                 });
 
             modelBuilder.Entity("posBackend.EF.Models.Product", b =>
@@ -296,44 +232,6 @@ namespace posBackend.EF.Migrations
                     b.ToTable("Units");
                 });
 
-            modelBuilder.Entity("posBackend.EF.Models.OpenBalance", b =>
-                {
-                    b.HasOne("posBackend.EF.Models.Store", "store")
-                        .WithMany("OpenBalances")
-                        .HasForeignKey("storeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("store");
-                });
-
-            modelBuilder.Entity("posBackend.EF.Models.OpenBalanceDt", b =>
-                {
-                    b.HasOne("posBackend.EF.Models.OpenBalance", "OpenBalance")
-                        .WithMany("OpenBalancesDt")
-                        .HasForeignKey("OpenBalanceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("posBackend.EF.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("posBackend.EF.Models.Unit", "Unit")
-                        .WithMany()
-                        .HasForeignKey("UnitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("OpenBalance");
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Unit");
-                });
-
             modelBuilder.Entity("posBackend.EF.Models.Product", b =>
                 {
                     b.HasOne("posBackend.EF.Models.Category", "Category")
@@ -369,19 +267,9 @@ namespace posBackend.EF.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("posBackend.EF.Models.OpenBalance", b =>
-                {
-                    b.Navigation("OpenBalancesDt");
-                });
-
             modelBuilder.Entity("posBackend.EF.Models.Product", b =>
                 {
                     b.Navigation("ProductUnits");
-                });
-
-            modelBuilder.Entity("posBackend.EF.Models.Store", b =>
-                {
-                    b.Navigation("OpenBalances");
                 });
 
             modelBuilder.Entity("posBackend.EF.Models.Unit", b =>

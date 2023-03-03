@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = posBackend.EF
+<<<<<<< HEAD
+build_property.ProjectDir = E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\
+=======
 build_property.ProjectDir = C:\Users\Mahmoud\Desktop\P_O_S-Asp.Net_Core_Angular\posBackend.EF\
+>>>>>>> fb25858f49fc98120d4d99f953a6e79ad19b6b2f

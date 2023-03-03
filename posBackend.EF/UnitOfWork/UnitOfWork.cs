@@ -18,6 +18,11 @@ namespace posBackend.EF.UnitOfWork
         public IRepository<ProductUnit> ProductUnits { get; private set; }
 
         public IRepository<Customer> Customers { get; private set; }
+        public IRepository<Store> Stores { get; private set; }
+        public IRepository<OpenBalance> OpenBalances { get; private set; }
+        public IRepository<OpenBalanceDt> OpenBalancesDt { get; private set; }
+
+
 
         public UnitOfWork(ApplicationDbContext Context)
         {
@@ -28,6 +33,11 @@ namespace posBackend.EF.UnitOfWork
             Products = new Repository<Product>(_Context);
             ProductUnits = new Repository<ProductUnit>(_Context);
             Customers = new Repository<Customer>(_Context);
+            Stores = new Repository<Store>(_Context);
+            OpenBalances = new Repository<OpenBalance>(_Context);
+            OpenBalancesDt = new Repository<OpenBalanceDt>(_Context);
+
+
         }
 
         public int Complete()

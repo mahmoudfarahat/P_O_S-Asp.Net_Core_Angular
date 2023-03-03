@@ -15,6 +15,10 @@ namespace posBackend.EF.UnitOfWork
         IRepository<Product> Products { get; }
         IRepository<ProductUnit> ProductUnits { get; }
         IRepository<Customer> Customers { get; }
+        IRepository<Store> Stores { get; }
+        IRepository<OpenBalance> OpenBalances { get; }
+        IRepository<OpenBalanceDt> OpenBalancesDt { get; }
+
 
         int Complete();
 
