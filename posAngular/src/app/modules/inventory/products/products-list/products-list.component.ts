@@ -27,7 +27,7 @@ export class ProductsListComponent implements OnInit ,AfterViewInit {
   }
 
 
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit' ,];
+  displayedColumns: string[] = ['id', 'productName','description','purchaseingPrice','wholesaleSellingPrice','sectoralSellingPrice','notes', 'isActive' ];
   // dataSource: MatTableDataSource<UserData>;
    dataSource: MatTableDataSource<any>;
 
@@ -42,7 +42,8 @@ export class ProductsListComponent implements OnInit ,AfterViewInit {
   }
 getProducts(){
 this.ProductsService.getProducts().subscribe(products => {
-  console.log(products)
+  this.dataSource = products
+  console.log(this.dataSource)
 })
 }
   applyFilter(event: Event) {
