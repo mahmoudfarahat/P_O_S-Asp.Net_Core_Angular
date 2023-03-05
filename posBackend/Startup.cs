@@ -39,6 +39,10 @@ namespace posBackend
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
             services.AddCors();
             services.AddSwaggerGen(c =>
             {

@@ -68,7 +68,7 @@ namespace posBackend.EF.Models
                          pu.HasKey(p => new { p.ProductID, p.UnitID });
                      }
                 );
-            //modelBuilder.Entity<OpenBalanceDt>().Property(x => x.TotalDt).HasComputedColumnSql("[Quantity]*[PurchasePrice]");
+           modelBuilder.Entity<OpenBalanceDt>().Property(x => x.TotalDt).HasComputedColumnSql("[Quantity]*[PurchasePrice]");
 
         }
 
