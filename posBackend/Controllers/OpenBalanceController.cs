@@ -65,6 +65,11 @@ namespace posBackend.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (OpenBalanceDTO.storeId != 1)
+                {
+                    return BadRequest("StoreId Must Be 1");
+                }
+                
                 var newOpenBalance = await _unitOfWork.OpenBalances.Add(_mapper.Map<OpenBalance>(OpenBalanceDTO));
                 _unitOfWork.Complete();
 

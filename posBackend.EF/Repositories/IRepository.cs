@@ -12,6 +12,8 @@ namespace posBackend.EF.Repositories
     {
         Task<IEnumerable<TEntitny>> GetAll();
         Task<TEntitny> GetByID(int id);
+        //Task<TEntitny> GetByID(int id);
+
         Task<IEnumerable<TEntitny>> GetListByCondition(Expression<Func<TEntitny, bool>> criteria);
         Task<IEnumerable<TEntitny>> Search(Expression<Func<TEntitny, bool>> criteria, int skip = 0, int take = 10,
             Expression<Func<TEntitny, bool>> orderBy = null, string orderByDirection = OrderBy.Ascending);
