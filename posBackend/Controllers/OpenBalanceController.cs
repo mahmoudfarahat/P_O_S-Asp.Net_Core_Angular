@@ -69,7 +69,20 @@ namespace posBackend.Controllers
                 {
                     return BadRequest("StoreId Must Be 1");
                 }
-                
+                foreach (var item in OpenBalanceDTO.OpenBalancesDt)
+                {
+                    var product = await _unitOfWork.Products.GetByID((int)item.ProductId);
+                    if (product == null)
+                    {
+                        return BadRequest("product Not Found");
+                    }
+                    var Unit = await _unitOfWork.Units.GetByID((int)item.UnitId);
+                    if (Unit == null)
+                    {
+                        return BadRequest("Unit Not Found");
+                    }
+                }
+
                 var newOpenBalance = await _unitOfWork.OpenBalances.Add(_mapper.Map<OpenBalance>(OpenBalanceDTO));
                 _unitOfWork.Complete();
 
@@ -78,6 +91,8 @@ namespace posBackend.Controllers
                 foreach (var item in NewOpenbalanceDT)
                 {
                     item.OpenBalanceId = newOpenBalance.ID;
+                    var product = await _unitOfWork.Products.GetByID((int)item.ProductId);
+                    
                 }
                 _unitOfWork.Complete();
 

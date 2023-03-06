@@ -71,4 +71,3 @@ E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBack
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\ref\posBackend.EF.dll
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.pdb
 E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.genruntimeconfig.cache
-E:\Source Code\P_O_S-Asp.Net_Core_Angular\posBackend.EF\obj\Debug\net5.0\posBackend.EF.csproj.AssemblyReference.cache
